@@ -1,0 +1,14 @@
+{
+  "name": "redpencil",
+  "version": "1.0.0",
+  "description": "Red Pencil Kata",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Nate Bradshaw",
+  "license": "MIT"
+}
