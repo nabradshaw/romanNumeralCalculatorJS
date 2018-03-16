@@ -1,19 +1,14 @@
-## Red Pencil Code Kata
-##### *see original specification [here](https://stefanroock.wordpress.com/2011/03/04/red-pencil-code-kata/)*
+## Roman Numeral Calculator Kata
+##### *see original specification [here](http://codingdojo.org/kata/RomanCalculator/)*
 
 #### Description
-We provide a shopping portal, where dealers can offer their goods (similiar to Amazon market place).
- 
-We want to support red pencil promotions for reduced prices. During the red pencil promotion the old price is crossed out in red and the new reduced price is written next to it.
+> “As a Roman Bookkeeper I want to add Roman numbers because doing it manually is too tedious.” 
 
+Given the Roman numerals, (IVXLCDM which means one, five, ten, fifty, hundred, fivehundred and a thousand respectively), create two numbers and add them. As we are in Rome there is no such thing as decimals or int, we need to do this with the strings. An example would be “XIV” + “LX” = “LXXIV”
 
-To avoid misuse of red pencil promotions the red pencil promotions are activated and deactivated automatically.
+There are some rules to a Roman number:
 
-
-The scope of the Code Kata is the implementations of the rules for activation and end of red pencil promotions.
-*   A red pencil promotion starts due to a price reduction. The price has to be reduced by at least 5% but at most bei 30% and the previous price had to be stable for at least 30 days.
-*   A red pencil promotion lasts 30 days as the maximum length.
-*   If the price is further reduced during the red pencil promotion the promotion will not be prolonged by that reduction.
-*   If the price is increased during the red pencil promotion the promotion will be ended immediately.
-*   If the price if reduced during the red pencil promotion so that the overall reduction is more than 30% with regard to the original price, the promotion is ended immediately.
-*   After a red pencil promotion is ended additional red pencil promotions may follow – as long as the start condition is valid: the price was stable for 30 days and these 30 days don’t intersect with a previous red pencil promotion.
+*   Numerals can be concatenated to form a larger numeral (“XX” + “II” = “XXII”)
+*   If a lesser numeral is put before a bigger it means subtraction of the lesser from the bigger (“IV” means four, “CM” means ninehundred)
+*   If the numeral is I, X or C you can’t have more than three (“II” + “II” = “IV”)
+*   If the numeral is V, L or D you can’t have more than one (“D” + “D” = “M”)

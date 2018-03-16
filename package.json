@@ -1,13 +1,14 @@
 {
-  "name": "redpencil",
+  "name": "romancalculator",
   "version": "1.0.0",
-  "description": "Red Pencil Kata",
+  "description": "Roman Calculator Kata",
   "main": "index.js",
   "directories": {
-    "test": ""
+    "test": "test"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jasmine",
+    "lint": "eslint ."
   },
   "author": "Nate Bradshaw",
   "license": "MIT",
@@ -15,9 +16,11 @@
     "babel-polyfill": "^6.26.0"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
     "editorconfig": "^0.15.0",
-    "eslint": "^4.18.1",
-    "jest": "^22.4.2"
+    "eslint": "^4.18.2",
+    "jasmine": "^3.1.0"
   }
 }
